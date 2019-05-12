@@ -1,0 +1,397 @@
+/*fontebi*/
+@font-face {
+	font-family: panton;
+	src: url(../fonts/pantonmtav3-bold.ttf);
+
+}
+@font-face{
+	font-family: normal;
+
+}
+
+*{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-decoration: none;
+}
+body{
+	/*background-color: #E8F0F3;*/
+	margin: 0 auto;
+
+}
+
+/*.vh{
+	height:calc(100vh - 10px);
+}*/
+
+.vh::before{
+	    content:"";
+		display: block;
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		background-color: #E8F0F3;
+		z-index: -1;
+		height: calc(100vh);
+}
+header{
+	
+	height: 65px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+
+.header-img{
+	width: 154px;
+	height: 40px;
+	display: flex;
+	margin-left: 141px;
+	margin-top: 30px;
+}
+
+.header-navigation{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+}
+.header-navigation ul {
+	width: 271px;
+	height: 19px;
+	margin-top: 40px;
+	margin-right: 19px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	text-align: center;
+	flex-wrap: nowrap;
+	
+}
+
+/*navigaciis pirveli sityva*/
+
+.header-navigation .cars a{
+	color:#6AB04C;
+}
+
+.header-navigation a{
+	font-family: panton;
+	font-size: 14px;
+	font-weight: bold ;
+	color: #181818;
+}
+
+
+
+.header-navigation button{
+	width: 100px;
+	height: 40px;
+	margin-right: 149px;
+	
+	margin-top: 30px;
+	background: #6AB04C;
+	border:1px solid #6AB04C;
+	border-radius: 30px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	
+	
+}
+
+.header-navigation button a{
+	font-family: panton;
+	font-size: 14px;
+	color: #fff;
+	font-weight: bold;
+
+}
+
+
+/*div-i cisferi ferisgan rom gamomeyo tetrit meore nawili manqanebis menu*/
+/*.available-cars{
+	background: white;
+}*/
+
+.hero{
+
+	height:calc(100vh - 65px);
+
+}
+
+.hero h1{
+	width:193px;
+	height:40px;
+	font-family: panton;
+	font-weight: bold;
+	font-size: 30px;
+	margin-top: 80px;
+	margin-left: 233px;
+
+}
+
+.hero p{
+	width: 69px;
+	height: 19px;
+	font-family: Big John;
+	font-size: 14px;
+	color: #fff;
+	margin-right: 1064px;
+	margin-left: 233px;
+}
+
+.hero img{
+	margin-right: 249px;
+	margin-left: 250px;
+}
+
+/*manqanis qveda nawili ul-ebi*/
+.hero-ul{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	text-align: center;
+	
+	width: 581px;
+	height: 52px;
+	margin-right: 387px;
+	margin-left: 398px;
+	
+
+
+}
+
+.hero-ul span{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	text-align: center;
+	
+}
+
+.first{
+	width: 97px;
+	height: 52px;
+}
+
+.second{
+	width:154px;
+	height:40px;
+}
+
+.third{
+	width: 198px;
+	height:52px;
+}
+
+.first-span{
+	font-family: panton;
+	font-weight: bold;
+	font-size: 12px;
+	color: #6AB04C;
+
+}
+
+.second-span{
+	font-family: panton;
+	font-size: 30px;
+	font-weight: bold;
+	color:#181818;
+
+}
+
+.hero::before{
+	content: "nodmotors";
+	display: block;
+	position: absolute;
+	width: 1301px;
+	height: 333px;
+	margin-left: 100px;
+	font-family: panton;
+	font-size: 250px;
+	font-weight: bold;
+	color: #FFFFFF;
+	opacity: 0.3;
+	z-index: -1;
+}
+
+.scroll-down{
+    position: relative;
+	width: 40px;
+	height: 50px;
+	bottom: -18px;
+}
+
+/*meore nawili pirvel gverdze*/
+
+.available-cars{
+	width: 197px;
+	height: 53px;
+	margin-left: 141px;
+
+}
+
+.available-cars h1{
+	font-family: panton;
+	font-weight: bold;
+	font-size: 30px;
+	content: #181818;
+}
+
+.available-cars p{
+	font-family: Big John;
+	font-weight: regular;
+	font-size: 10px;
+	color: #95A5A6;
+}
+
+.custom-select{
+	
+	height: 40px;
+	margin-top: 27px;
+	margin-left: 141px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.custom-select-choose{
+	width: 164px;
+	height: 40px;
+	border: 1px solid #F2F2F2;
+	border-radius: 30px;
+
+
+	 
+}
+
+.select-number{
+	width: 72px;
+	height: 40px;
+	margin-left: 480px;
+	margin-right: 140px;
+	border: 1px solid #6AB04C;
+	background-color: #6AB04C;
+	border-radius: 30px;
+	color: #ffffff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	font-family: panton;
+	font-size: 14px;
+	font-weight: bold;
+	
+}
+
+.car-models{
+	display: flex;
+	
+
+}
+
+.car-models ul {
+	width: 1084px;
+	height: 242px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+	text-align: center;
+	margin-right: 141px;
+	margin-left: 141px;
+	margin-top: 100px;
+	
+}
+
+.car-models li{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	margin-bottom: 95px;
+}
+.car-models .top{
+	
+	height: 16px;
+	font-family: panton;
+	font-size: 12px;
+	font-weight: bold;
+	color: #6AB04C;
+	display: flex;
+	margin-left: 150px;
+	
+	
+}
+
+.car-models img{
+
+
+}
+
+.car-models h1{
+	
+	height: 27px;
+	margin-top:5px;
+	margin-bottom: 0px;
+	display: flex;
+	font-family: panton;
+	font-size: 20px;
+	font-weight: bold;
+	
+	
+
+}
+
+.car-models p{
+	width: 97px;
+	color: #95A5A6;
+	font-size: 10px;
+	display: flex;
+
+
+	
+
+}
+
+footer{
+	
+	height: 70px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	
+	
+
+}
+
+footer img{
+	width: 146px;
+	height: 35px;
+	margin-left: 141px;
+	margin-top: 776px;
+	margin-bottom: 40px;
+	
+
+}	
+
+footer p{
+	width: 125px;
+	height: 16px;
+	font-family: panton;
+	font-size: 12px;
+	font-weight: bold;
+	color: #95A5A6;
+	margin-top: 750px;
+	
+}
+
+
+	
