@@ -1,0 +1,173 @@
+.mobile-menu {
+    display: none;
+}
+
+
+@media only screen and (max-width: 970px) {
+    .car-models li {
+        max-width: 50%;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+    .car-models ul {
+        display: flex;
+    }
+    .car-models li {
+        max-width: 100%;
+    }
+    .car-models img {
+        padding: 0 50px;
+    }
+    .vh::before {
+        height: calc(52.5vh);
+    }
+    .hero {
+        height: 400px;
+        z-index: -1;
+    }
+    .available-cars h1, p {
+        text-align: center;
+    }
+    .custom-select {
+        display: block;
+    }
+    .d-flex {
+        display: block;
+    }
+    .custom-select-choose {
+        display: block;
+        margin: 10px auto;
+        padding-left: 5%;
+    }
+    .select-number {
+        margin: 0 auto;
+    }
+    .manufacturer {
+        padding-left: 20px;
+    }
+    .logo {
+		position: relative;
+    }
+    .burger-menu {
+        margin-top: 25px;
+        background: #6AB04C;
+        padding: 10px;
+        border-radius: 10px;
+    }
+    .mobile-menu {
+		width: 25px;
+		height: 20px;
+        display: block;
+		border-top: 3px solid #ffffff;
+		border-bottom: 3px solid #ffffff;
+		cursor: pointer;
+		position: relative;
+		z-index: 2;
+	}
+	.mobile-menu:after {
+		content: '';
+		width: 25px;
+		height: 3px;
+		background: #ffffff;
+		position: absolute;
+		right: 0;
+		top: calc( 50% - 2px );
+	}
+	.mobile-menu.open {
+		border: none;
+
+	}
+	.mobile-menu.open:after {
+	  content: '';
+	  width: 35px;
+	  height: 5px;
+	  background: #6AB04C;
+	  position: absolute;
+      top: 9px;
+      left: -5px;
+	  transform: rotate(140deg);
+    }
+    .header-img.open {
+        position: fixed;
+        z-index: 5;
+        top: -2px;
+    }
+    .header-navigation.open {
+        position: fixed;
+        right: 27px;
+    }
+	.mobile-menu.open:before {
+	  content: '';
+	  width: 35px;
+	  height: 5px;
+	  background: #6AB04C;
+	  position: absolute;
+	  right: -4px;
+	  /* left: 0; */
+	  top: 8px;
+	  transform: rotate(40deg);
+    }
+    nav {
+		position: fixed;
+		width: 100%;
+		height: 33%;
+		background: rgba(255,255,255,0.9);
+		top: 0;
+		left: 0;
+		margin-top: 0;
+		padding-top: 50px;
+		z-index: 1;
+		display: none;
+    }
+    .header-navigation ul {
+        display: block;
+        width: 90%;
+        margin: 30px auto;
+    }
+    .header-navigation ul li {
+        text-align: left;
+    }
+	nav ul li {
+		text-align: center;
+	}
+	nav ul li a {
+	  font-size: 2.5em;
+    }
+    .header-navigation button {
+        margin: 15px auto;
+    }
+    footer {
+        width: 80%;
+        flex-direction: column;
+        margin: 0 auto;
+    }
+    .child:nth-child(2n) {
+        order: -1;
+      }
+    footer img {
+        display: block;
+        margin: 50px auto;
+    }
+    .number {
+        width: 100%;
+        text-align: right;
+        margin-top: -147px;
+    }
+    .email {
+        width: 100%;
+        text-align: left;
+        margin-top: 50px;
+    }
+    .second-span {
+        font-size: 20px;
+    }
+    .hero::before{
+        font-size: 18vw !important;
+    }
+}
+
+

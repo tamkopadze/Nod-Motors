@@ -3,30 +3,91 @@
 <head>
 	<title>Nod Motors</title>
 	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/media.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
-<body>
+<body class="container">
+
+	<div id="overlay">
+		<header>
+			<section class="header-img">
+				<img class="logo" src="assets/images/logo.png">
+			</section>
+			<section class="header-navigation">	
+				<div class="burger-menu">
+					<div class="mobile-menu"></div>
+				</div>
+				<nav>
+					<ul>
+						<li class="cars"><a href="#!">Cars</a></li>
+						<li><a href="#!">terms and motors</a></li>
+						<li><a href="#!">contact</a></li>
+						<button class="close-button" onclick="off()"><a href="#" class="close"></a></button>
+					</ul>
+				</nav>
+			</section>
+		</header>
+		<div class="overlay_content" id="content">
+				<h1 id="overlay_h1">Booking Form</h1>
+				<p class="overlay_p">Includes Michelin Pilot Sport 4S tires</p>
+
+			<form class="input_types" id="input">
+				<input type="text"  class="name" name="name" placeholder="Name">
+				<input type="text"  class="phone" name="Phone" placeholder="Phone">
+				<input type="email" class="email" name="name" placeholder="Email">
+				<input type="text"  name="textarea" placeholder="messige">
+				<button type="submit" class="send" onclick="sendMessige()">Send</button>
+			</form>
+		</div>
+		
+	</div>
+	<div id="succsess-sent">
+		<h1 id="overlay_h1">Booking Form</h1>
+		<p class="overlay_p">Includes Michelin Pilot Sport 4S tires</p>
+
+		<span class="checkmark">
+		    <div class="checkmark_circle"></div>
+		    <div class="checkmark_stem"></div>
+		    <div class="checkmark_kick"></div>
+		</span>
+
+		<div class="success">
+			<p>
+				<span>Thank you!</span>
+				<span>Your message has been</span>
+				<span>sent successfully</span>
+			</p>
+		</div>
+	</div>
+
+
+
 <div class="vh">    
-	<header>
+	<header id="mainHeader">
 		<section class="header-img">
-			<img class="logo" src="assets/images/logo.png">
+			<a href="index.html"><img class="logo" src="assets/images/logo.png"></a>
 		</section>
 		<section class="header-navigation">	
+			<div class="burger-menu">
+				<div class="mobile-menu"></div>
+			</div>
 			<nav>
 				<ul>
 					<li class="cars"><a href="#!">Cars</a></li>
 					<li><a href="#!">terms and motors</a></li>
 					<li><a href="#!">contact</a></li>
+					<button onclick="on()"><a href="#!">Book</a></button>
 				</ul>
 			</nav>
-			<button><a href="#!">Book</a></button>
 		</section>
 	</header>	
 		
 	<div class="hero">
 		<h1>Tesla Model 3</h1>
 		<p>Luxury Fast</p>
-		<img src="assets/images/mainpic.png">
+		<img class="mainPicture" src="assets/images/mainpic.png">
 		<ul class="hero-ul">
 			<li class="first">
 				<span class="first-span">power:</span>
@@ -43,7 +104,7 @@
 				<span class="second-span">after 100 km</span>
 			</li>
 		</ul>
-		<img class="scroll-down" src="assets/images/scroll_down.png">
+		<img class="scroll-down" onClick="scrollBottom()" src="assets/images/scroll_down.png">
 	</div>
 </div>
 <!--meore nawili -->		
@@ -54,38 +115,47 @@
 		</section>
 
 		<section class="custom-select">
-			  <select class="custom-select-choose">
-			    <option class="manufacturer">manufacturer</option>
-			  </select> 
+			<div class="d-flex">
+				<select class="custom-select-choose">
+						<option class="manufacturer">manufacturer</option>
+					</select> 
 
 
-			  <select class="custom-select-choose">
-			    <option value="model">model</option>
-			  </select> 
+					<select class="custom-select-choose">
+						<option value="model">model</option>
+					</select> 
 
-			  <select class="custom-select-choose">
-			    <option value="year">year</option>
-			  </select> 
+					<select class="custom-select-choose">
+						<option value="year">year</option>
+					</select> 
+			</div>
 			<div class="select-number">
-			  <option value="20">20</option>
+				<option value="20">20</option>
 			</div>  
 	    </section>
 
 	 
 	<section class="car-models">
-			<ul>
-				<li>
-				    <p class="top">from: 59 000$</p>
-					<img src="assets/images/1.png">
-					<div class="select-color"></div>
-					<h1>Tesla Model 3</h1>
-					<p class="last">302 hp 200km/ph</p> 
-				</li>
+		<ul>
+			<li>
+				<p class="top">from: 59 000$</p>
+				<a href="second.html"><img src="assets/images/1.png"></a>
+				<div class="select-color">
+					<span class="select-color1"></span>
+					<span  class="select-color2"></span>
+					<span  class="select-color3"></span>
+				</div>
+				<h1>Tesla Model 3</h1>
+				<p class="last">302 hp 200km/ph</p> 
+			</li>
 
 			<li>
 				<p class="top">from: 79 000$</p>
-				<img src="assets/images/2.png">
-				<div class="select-color"></div>
+				<a href="second.html"><img src="assets/images/2.png"></a>
+				<div class="select-color">
+						<span class="select-color1"></span>
+						<span  class="select-color2"></span>
+				</div>
 				<h1>Tesla Model 3s</h1>
 				<p class="last">343 hp 252 km/ph</p>
 
@@ -93,8 +163,13 @@
 
 			<li>
 				<p class="top">from: 103 000$</p>
-				<img src="assets/images/3.png">
-				<div class="select-color"></div>
+				<a href="second.html"><img src="assets/images/3.png"></a>
+				<div class="select-color">
+						<span class="select-color1"></span>
+						<span  class="select-color4"></span>
+						<span  class="select-color5"></span>
+						<span  class="select-color6"></span>
+				</div>	
 				<h1>Tesla Model 3z</h1>
 				<p class="last">380 hp 302 km/ph</p>
 
@@ -102,8 +177,13 @@
 
 			<li>
 				<p class="top">from: 61 000$</p>
-				<img src="assets/images/4.png">
-				<div class="select-color"></div>
+				<a href="second.html"><img src="assets/images/4.png"></a>
+				<div class="select-color">
+						<span class="select-color1"></span>
+						<span  class="select-color2"></span>
+						<span  class="select-color7"></span>
+						<span  class="select-color5"></span>
+				</div>	
 				<h1>The first ever BMW x2</h1>
 				<p class="last">302 hp 200 km/ph</p>
 
@@ -111,8 +191,14 @@
 
 			<li>
 				<p class="top">from: 92 000$</p>
-				<img src="assets/images/5.png">
-				<div class="select-color"></div>
+				<a href="second.html"><img src="assets/images/5.png"></a>
+				<div class="select-color">
+						<span class="select-color1"></span>
+						<span  class="select-color2"></span>
+						<span  class="select-color8"></span>
+						<span  class="select-color5"></span>
+						<span  class="select-color10"></span>
+				</div>	
 				<h1>BMW M6 Gran Coupe</h1>
 				<p class="last">343 hp 252 km/ph</p>
 
@@ -120,8 +206,13 @@
 
 			<li>
 				<p class="top">from: 132 000$</p>
-				<img src="assets/images/6.png">
-				<div class="select-color"></div>
+				<a href="second.html"><img src="assets/images/6.png"></a>
+				<div class="select-color">
+						<span class="select-color1"></span>
+						<span  class="select-color2"></span>
+						<span  class="select-color5"></span>
+						<span  class="select-color8"></span>
+				</div>	
 				<h1>BMW X7</h1>
 				<p class="last">380 hp 302 km/ph</p>
 
@@ -130,13 +221,45 @@
 	</section> 
 
 	<footer>
-		<img src="assets/images/sa_logo.png">
-		<p>c nodmotors GE 2018</p>
-		<p class="number">(+995) 595 483 217</p>
-		<p class="email">info@nodmotors.ge</p>
+		<img class="child" src="assets/images/sa_logo.png">
+		<p class="child">c nodmotors GE 2018</p>
+		<p class="child number">(+995) 595 483 217</p>
+		<p class="child email">info@nodmotors.ge</p>
 	</footer>
-	
-	
 
+	
+	<script>
+		$(document).ready(function () {
+			$('.mobile-menu').unbind('click');
+			$('.mobile-menu').click(function () {
+				$('.mobile-menu').toggleClass('open');
+				$('.header-img').toggleClass('open');
+				$('.header-navigation').toggleClass('open');
+				$('nav').fadeToggle(200);
+			});
+		});
+		scrollingElement = (document.scrollingElement || document.body)
+		function scrollBottom () {
+		   scrollingElement.scrollTop = scrollingElement.scrollHeight;
+		}
+
+		function on() {
+		  document.getElementById("overlay").style.display = "block";
+
+		  var success = document.getElementById("mainHeader");
+		  success.style.visibility = 'hidden';
+		}
+
+		function off() {
+		  document.getElementById("overlay").style.display = "none";
+		  var success = document.getElementById("mainHeader");
+		  success.style.visibility = 'visible';
+		}
+		function sendMessige(){
+			var success = document.getElementById("succsess-sent").innerHTML;
+			document.getElementById("content").innerHTML = success;
+		}
+		
+	</script>
 </body>
 </html>

@@ -4,29 +4,93 @@
 	<title>Nod Motors</title>
 	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/media.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
-<body>
-   
-	<header>
+<body class="container">
+	<!-- pop up contecnt -->
+   	<div id="overlay">
+   		<header>
+   			<section class="header-img">
+   				<a href="index.html"><img class="logo" src="assets/images/logo.png"></a>
+   			</section>
+   			<section class="header-navigation">	
+   				<div class="burger-menu">
+   					<div class="mobile-menu"></div>
+   				</div>
+   				<nav>
+   					<ul>
+   						<li class="cars"><a href="#!">Cars</a></li>
+   						<li><a href="#!">terms and motors</a></li>
+   						<li><a href="#!">contact</a></li>
+   						<button class="close-button" onclick="off()"><a href="#" class="close"></a></button>
+   					</ul>
+   				</nav>
+   			</section>
+   		</header>
+   		<div class="overlay_content" id="content">
+   				<h1 id="overlay_h1">Booking Form</h1>
+   				<p class="overlay_p">Includes Michelin Pilot Sport 4S tires</p>
+
+   			<form class="input_types" id="input">
+   				<input type="text"  class="name" name="name" placeholder="Name">
+   				<input type="text"  class="phone" name="Phone" placeholder="Phone">
+   				<input type="email" class="email" name="name" placeholder="Email">
+   				<input type="text"  name="textarea" placeholder="messige">
+   				<button type="submit" class="send" onclick="sendMessige()">Send</button>
+   			</form>
+   		</div>
+   	</div>
+   	<div id="succsess-sent">
+   		<h1 id="overlay_h1">Booking Form</h1>
+   		<p class="overlay_p">Includes Michelin Pilot Sport 4S tires</p>
+
+   		<span class="checkmark">
+   		    <div class="checkmark_circle"></div>
+   		    <div class="checkmark_stem"></div>
+   		    <div class="checkmark_kick"></div>
+   		</span>
+
+   		<div class="success">
+   			<p>
+   				<span>Thank you!</span>
+   				<span>Your message has been</span>
+   				<span>sent successfully</span>
+   			</p>
+   		</div>
+   	</div>
+   	<!-- pop up contecnt -->
+
+
+	<header id="mainHeader">
 		<section class="header-img">
-			<img class="logo" src="assets/images/logo.png">
+			<a href="index.html"><img class="logo" src="assets/images/logo.png"></a>
 		</section>
-		<section class="header-navigation">	
+		<section class="header-navigation">
+			<div class="burger-menu">
+				<div class="mobile-menu"></div>
+			</div>	
 			<nav>
 				<ul>
 					<li class="cars"><a href="#!">Cars</a></li>
 					<li><a href="#!">terms and motors</a></li>
 					<li><a href="#!">contact</a></li>
+					<button onclick="on()"><a href="#!">Book</a></button>
 				</ul>
 			</nav>
-			<button><a href="#!">Book</a></button>
+			
 		</section>
 	</header>	
 		
 	<div class="hero">
 		<h1>Tesla Model 3</h1>
 		<p>Luxury Fast</p>
-		<img src="assets/images/mainpic.png">
+		<img class="mainPicture" src="assets/images/mainpic.png">
+		        <div class="select-color">
+						<span class="select-color1"></span>
+						<span  class="select-color2"></span>
+						<span  class="select-color10"></span>
+				</div>	
 		<ul class="hero-ul">
 			<li class="first">
 				<span class="first-span">power:</span>
@@ -43,7 +107,150 @@
 				<span class="second-span">after 100 km</span>
 			</li>
 		</ul>
-		<img class="scroll-down" src="assets/images/scroll_down.png">
+		<img class="scroll-down" onClick="scrollBottom()" src="assets/images/scroll_down.png">
 	</div>
+
+	<article class="content">
+			<section class="performance">
+					<h1>Performance</h1>
+					<p>Imcudes Micheline Pilop Sport 4S tires, logner, more powerpul brakes</p>
+					<img class="perfo-car" src="assets/images/pic_over.png">
+					
+						<!-- <ul>
+							<li>
+								<img class="spidometr" src="assets/images/speedometer.png">
+								<p>Quickest asseleration-from zero to 60 mph</p>
+							</li>
+
+							<li>
+								<h1>155 mph</h1>
+								<p>improved handing and aerodynamics allow</p>
+							</li>
+
+							<li>
+								<h1>AWD</h1>
+								<p>Dual Motor All-Wheel Drive instantly</p>
+							</li>
+						</ul> -->
+			</section>	
+		
+			<section class="history" >
+					<h1>History</h1>
+					<p>Model 3 comes with the option of dual motor all-wheel drive, 20” Performance Wheels and Brakes and lowered suspension for total control, in all weather conditions. And a carbon fiber spoiler improves stability at high speeds, all</p>
+					<img src="assets/images/tesla_road.png">
+			</section>
+	</article>
+
+	<article class="content1">
+		<section class="safety">
+			<h1>Built for Safety</h1>
+			<p class="safety-p">Built for Safety <br> Safety is the most important part of the overall Model 3 design. The metal structure is a combination of aluminum and steel, for maximum strength in every area. In a roof-crush test, Model 3 resisted four times its own mass, even with an all-glass roof: that's the same weight as two full-grown African elephants.</p>
+			<div class="rating">	
+				<h1>5-star Overall Rating</h1>	
+				<ul class="rating-content">
+					<li><span>Front</span> <span><img src="assets/images/stars.png"></span></li>
+					<li><span>Side <span class="star_span">mdb</span></span> <span><img src="assets/images/stars.png"></span> </li>
+					<li><span>Side Pole</span> <span><img src="assets/images/stars.png"></span></li>
+					<li><span>Driver <span class="star_span">overall</span></span><span><img src="assets/images/stars.png"></span></li>
+					<li> <span>Side  <span class="star_span">overall</span></span> <span><img src="assets/images/stars.png"></span> </li>
+
+				</ul>
+
+			</div>
+			
+		</section>
+
+		<section class="safety-map">
+			<img src="assets/images/map.png">
+			<h1>Go Anywhere</h1>
+			<p>Model 3 is fully electric, so you never need to visit a gas stationagain. If you charge overnight at home, you can wake up to a full battery every morning. And when you’re on the road, it’s easy to plug in along the way—at any public station or with the Tesla charging network. We currently have over 10,000 Superchargers </p>
+		</section>
+	</article>
+
+ <section class="slide-cars">
+ 	<img src="assets/images/gallery_1.png">
+ 	<img src="assets/images/gallery_2.png">
+ 	<img src="assets/images/gallery_3.png">
+ 	<img src="assets/images/gallery_4.png">
+ </section>
+
+
+ <section class="available-cars">
+			<h1>Available Cars</h1>
+			<p>please use filter for optimal results</p>
+ </section>
+
+ <section class="car-models">
+			<ul>
+				<li>
+				    <p class="top">from: 59 000$</p>
+					<img src="assets/images/1.png">
+					<div class="select-color"></div>
+					<h1>Tesla Model 3</h1>
+					<p class="last">302 hp 200km/ph</p> 
+				</li>
+
+			<li>
+				<p class="top">from: 79 000$</p>
+				<img src="assets/images/2.png">
+				<div class="select-color"></div>
+				<h1>Tesla Model 3s</h1>
+				<p class="last">343 hp 252 km/ph</p>
+
+			</li>
+
+			<li>
+				<p class="top">from: 103 000$</p>
+				<img src="assets/images/3.png">
+				<div class="select-color"></div>
+				<h1>Tesla Model 3z</h1>
+				<p class="last">380 hp 302 km/ph</p>
+
+			</li>
+        </ul>	
+   </section>
+   <footer>
+   	<img class="child" src="assets/images/sa_logo.png">
+   	<p class="child">c nodmotors GE 2018</p>
+   	<p class="child number">(+995) 595 483 217</p>
+   	<p class="child email">info@nodmotors.ge</p>
+   </footer>
+
+   
+   <script>
+   	$(document).ready(function () {
+   		$('.mobile-menu').unbind('click');
+   		$('.mobile-menu').click(function () {
+   			$('.mobile-menu').toggleClass('open');
+   			$('.header-img').toggleClass('open');
+   			$('.header-navigation').toggleClass('open');
+   			$('nav').fadeToggle(200);
+   		});
+   	});
+   	scrollingElement = (document.scrollingElement || document.body)
+   	function scrollBottom () {
+   	   scrollingElement.scrollTop = scrollingElement.scrollHeight;
+   	}
+
+   	function on() {
+   	  document.getElementById("overlay").style.display = "block";
+
+   	  var success = document.getElementById("mainHeader");
+   	  success.style.visibility = 'hidden';
+   	}
+
+   	function off() {
+   	  document.getElementById("overlay").style.display = "none";
+   	  var success = document.getElementById("mainHeader");
+   	  success.style.visibility = 'visible';
+   	}
+   	function sendMessige(){
+   		var success = document.getElementById("succsess-sent").innerHTML;
+   		document.getElementById("content").innerHTML = success;
+   	}
+   	
+   </script>     		
+</body>
+</html>
 
 	
