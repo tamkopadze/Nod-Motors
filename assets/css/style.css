@@ -475,7 +475,7 @@ header{
 
 .car-models ul {
 	 width: 100%; 
-	 height: 242px; 
+	 /*height: 242px; */
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
