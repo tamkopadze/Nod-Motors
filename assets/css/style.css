@@ -401,10 +401,13 @@ header{
 	height: 40px;
 	border: 1px solid #F2F2F2;
 	border-radius: 30px;
-
-
+	font-family: panton;
+	font-size:14px;
+	font-weight: bold;
 	 
 }
+
+
 
 .select-number{
 	width: 72px;
@@ -425,21 +428,62 @@ header{
 	
 }
 
+
+/*.margin-left1{
+	z-index: 2;
+	position: absolute;
+	top: 35%;
+	left: 22%;
+	color: #fff !important;
+}
+.margin-left2{
+	z-index: 2;
+	position: absolute;
+	top: 45%;
+	left: 36%;
+	color: #fff !important;
+}
+.margin-left3{
+	z-index: 2;
+	position: absolute;
+	top: 180%;
+	left: 20%;
+	color: #fff !important;
+}
+.margin-left4{
+	z-index: 2;
+	position: absolute;
+	top: 50%;
+	left: 20%;
+	color: #fff !important;
+}*/
 .car-models{
-	/* display: flex; */
+	 display: flex; 
+}
+.relative{
+	position: relative;
+}
+.spidometr{
+	z-index: 2;
+	position: absolute;
+	top: 20%;
+	left: 45%;
+	width: 40px !important; 
+	height: 21px !important;
 }
 
+
 .car-models ul {
-	 width: 1200px; 
-	/* height: 242px; */
+	 width: 100%; 
+	 height: 242px; 
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
-	justify-content: space-between;
+	justify-content: space-around;
 	align-items: center;
 	text-align: center;
-	/* margin-right: 141px;
-	margin-left: 141px; */
+	 /*margin-right: 50px;
+	/*margin-left: 0px; */
 	margin-top: 100px;
 	
 }
@@ -916,21 +960,32 @@ input[name=textarea]{
 	justify-content: center;
 	align-items: center;
 
+
 }
 
 .slide-cars img{
 	margin-right: 20px;
 	margin-bottom: 100px;
 
+
 }
 
 
 footer{
 	
-	height: 70px;
+	margin-top: 100px;
+	display: flex;
+	
+}
+.around{
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+}
+
+.around1{
 	display: flex;
 	justify-content: space-between;
-	align-items: center;
 }
 
 footer img{
@@ -939,8 +994,6 @@ footer img{
 	/* margin-left: 141px; */
 	/* margin-top: 776px; */
 	/* margin-bottom: 40px; */
-	
-
 }	
 
 footer p{

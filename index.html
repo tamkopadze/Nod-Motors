@@ -7,13 +7,14 @@
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/media.css">
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="assets/js/script.js"></script>
 </head>
 <body class="container">
 
 	<div id="overlay">
 		<header>
 			<section class="header-img">
-				<img class="logo" src="assets/images/logo.png">
+				<img class="logo lazy" src="assets/images/logo.png">
 			</section>
 			<section class="header-navigation">	
 				<div class="burger-menu">
@@ -67,7 +68,7 @@
 <div class="vh">    
 	<header id="mainHeader">
 		<section class="header-img">
-			<a href="index.html"><img class="logo" src="assets/images/logo.png"></a>
+			<a href="index.html"><img class="logo lazy" src="assets/images/logo.png"></a>
 		</section>
 		<section class="header-navigation">	
 			<div class="burger-menu">
@@ -87,7 +88,7 @@
 	<div class="hero">
 		<h1>Tesla Model 3</h1>
 		<p>Luxury Fast</p>
-		<img class="mainPicture" src="assets/images/mainpic.png">
+		<img class="mainPicture lazy" src="assets/images/mainpic.png">
 		<ul class="hero-ul">
 			<li class="first">
 				<span class="first-span">power:</span>
@@ -104,7 +105,7 @@
 				<span class="second-span">after 100 km</span>
 			</li>
 		</ul>
-		<img class="scroll-down" onClick="scrollBottom()" src="assets/images/scroll_down.png">
+		<img class="scroll-down lazy" onClick="scrollBottom()" src="assets/images/scroll_down.png">
 	</div>
 </div>
 <!--meore nawili -->		
@@ -117,16 +118,16 @@
 		<section class="custom-select">
 			<div class="d-flex">
 				<select class="custom-select-choose">
-						<option class="manufacturer">manufacturer</option>
+						<option class="manufacturer">Manufacturer</option>
 					</select> 
 
 
 					<select class="custom-select-choose">
-						<option value="model">model</option>
+						<option value="model">Model</option>
 					</select> 
 
 					<select class="custom-select-choose">
-						<option value="year">year</option>
+						<option value="year">Year</option>
 					</select> 
 			</div>
 			<div class="select-number">
@@ -139,7 +140,7 @@
 		<ul>
 			<li>
 				<p class="top">from: 59 000$</p>
-				<a href="second.html"><img src="assets/images/1.png"></a>
+				<a href="second.html"><img src="assets/images/1.png" class="lazy"></a>
 				<div class="select-color">
 					<span class="select-color1"></span>
 					<span  class="select-color2"></span>
@@ -151,7 +152,7 @@
 
 			<li>
 				<p class="top">from: 79 000$</p>
-				<a href="second.html"><img src="assets/images/2.png"></a>
+				<a href="second.html"><img src="assets/images/2.png" class="lazy"></a>
 				<div class="select-color">
 						<span class="select-color1"></span>
 						<span  class="select-color2"></span>
@@ -163,7 +164,7 @@
 
 			<li>
 				<p class="top">from: 103 000$</p>
-				<a href="second.html"><img src="assets/images/3.png"></a>
+				<a href="second.html"><img src="assets/images/3.png" class="lazy"></a>
 				<div class="select-color">
 						<span class="select-color1"></span>
 						<span  class="select-color4"></span>
@@ -177,7 +178,7 @@
 
 			<li>
 				<p class="top">from: 61 000$</p>
-				<a href="second.html"><img src="assets/images/4.png"></a>
+				<a href="second.html"><img src="assets/images/4.png" class="lazy"></a>
 				<div class="select-color">
 						<span class="select-color1"></span>
 						<span  class="select-color2"></span>
@@ -191,7 +192,7 @@
 
 			<li>
 				<p class="top">from: 92 000$</p>
-				<a href="second.html"><img src="assets/images/5.png"></a>
+				<a href="second.html"><img src="assets/images/5.png" class="lazy"></a>
 				<div class="select-color">
 						<span class="select-color1"></span>
 						<span  class="select-color2"></span>
@@ -206,7 +207,7 @@
 
 			<li>
 				<p class="top">from: 132 000$</p>
-				<a href="second.html"><img src="assets/images/6.png"></a>
+				<a href="second.html"><img src="assets/images/6.png" class="lazy"></a>
 				<div class="select-color">
 						<span class="select-color1"></span>
 						<span  class="select-color2"></span>
@@ -221,10 +222,16 @@
 	</section> 
 
 	<footer>
-		<img class="child" src="assets/images/sa_logo.png">
-		<p class="child">c nodmotors GE 2018</p>
-		<p class="child number">(+995) 595 483 217</p>
-		<p class="child email">info@nodmotors.ge</p>
+		<div class="around">
+				<img class="child" src="assets/images/sa_logo.png">
+			<div class="around1">
+				<p class="child">c nodmotors GE 2018</p>
+			</div>
+			<div class="around1">
+				<p class="child number">(+995) 595 483 217</p>
+				<p class="child email">info@nodmotors.ge</p>
+			</div>
+		</div>
 	</footer>
 
 	

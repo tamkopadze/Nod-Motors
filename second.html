@@ -6,13 +6,14 @@
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/media.css">
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="assets/js/script.js"></script>
 </head>
 <body class="container">
 	<!-- pop up contecnt -->
    	<div id="overlay">
    		<header>
    			<section class="header-img">
-   				<a href="index.html"><img class="logo" src="assets/images/logo.png"></a>
+   				<a href="index.html"><img class="logo lazy" src="assets/images/logo.png"></a>
    			</section>
    			<section class="header-navigation">	
    				<div class="burger-menu">
@@ -64,7 +65,7 @@
 
 	<header id="mainHeader">
 		<section class="header-img">
-			<a href="index.html"><img class="logo" src="assets/images/logo.png"></a>
+			<a href="index.html"><img class="logo lazy" src="assets/images/logo.png"></a>
 		</section>
 		<section class="header-navigation">
 			<div class="burger-menu">
@@ -85,7 +86,7 @@
 	<div class="hero">
 		<h1>Tesla Model 3</h1>
 		<p>Luxury Fast</p>
-		<img class="mainPicture" src="assets/images/mainpic.png">
+		<img class="mainPicture lazy" src="assets/images/mainpic.png">
 		        <!-- <div class="select-color">
 						<span class="select-color1"></span>
 						<span  class="select-color2"></span>
@@ -107,37 +108,34 @@
 				<span class="second-span">after 100 km</span>
 			</li>
 		</ul>
-		<img class="scroll-down" onClick="scrollBottom()" src="assets/images/scroll_down.png">
+		<img class="scroll-down lazy" onClick="scrollBottom()" src="assets/images/scroll_down.png">
 	</div>
 
 	<article class="content">
 			<section class="performance">
+			<div>
 					<h1>Performance</h1>
 					<p>Imcudes Micheline Pilop Sport 4S tires, logner, more powerpul brakes</p>
-					<img class="perfo-car" src="assets/images/pic_over.png">
-					
-						<!-- <ul>
-							<li>
-								<img class="spidometr" src="assets/images/speedometer.png">
-								<p>Quickest asseleration-from zero to 60 mph</p>
-							</li>
-
-							<li>
-								<h1>155 mph</h1>
-								<p>improved handing and aerodynamics allow</p>
-							</li>
-
-							<li>
-								<h1>AWD</h1>
-								<p>Dual Motor All-Wheel Drive instantly</p>
-							</li>
-						</ul> -->
+			</div>
+			<div>	
+					<img class="perfo-car lazy" src="assets/images/pic_over.png">
+					<!-- <img class="spidometr lazy" src="assets/images/speedometer.png">
+					<p class="margin-left1 lazy">Quickest asseleration-from zero to 60 mph</p>
+					<h1 class="margin-left2 lazy">155 mph</h1>
+					<p class="margin-left3 lazy">improved handing and aerodynamics allow</p>
+					<h1 class="margin-left4 lazy">AWD</h1>
+					<p class="margin-left5 lazy">Dual Motor All-Wheel Drive instantly</p> -->
+			</div>
 			</section>	
+
+
+
+
 		
 			<section class="history" >
 					<h1>History</h1>
 					<p>Model 3 comes with the option of dual motor all-wheel drive, 20” Performance Wheels and Brakes and lowered suspension for total control, in all weather conditions. And a carbon fiber spoiler improves stability at high speeds, all</p>
-					<img src="assets/images/tesla_road.png">
+					<img src="assets/images/tesla_road.png" class="lazy">
 			</section>
 	</article>
 
@@ -148,11 +146,11 @@
 			<div class="rating">	
 				<h1>5-star Overall Rating</h1>	
 				<ul class="rating-content">
-					<li><span>Front</span> <span><img src="assets/images/stars.png"></span></li>
-					<li><span>Side <span class="star_span">mdb</span></span> <span><img src="assets/images/stars.png"></span> </li>
-					<li><span>Side Pole</span> <span><img src="assets/images/stars.png"></span></li>
-					<li><span>Driver <span class="star_span">overall</span></span><span><img src="assets/images/stars.png"></span></li>
-					<li> <span>Side  <span class="star_span">overall</span></span> <span><img src="assets/images/stars.png"></span> </li>
+					<li><span>Front</span> <span><img src="assets/images/stars.png" class="lazy"></span></li>
+					<li><span>Side <span class="star_span">mdb</span></span> <span><img src="assets/images/stars.png" class="lazy"></span> </li>
+					<li><span>Side Pole</span> <span><img src="assets/images/stars.png" class="lazy"></span></li>
+					<li><span>Driver <span class="star_span">overall</span></span><span><img src="assets/images/stars.png" class="lazy"></span></li>
+					<li> <span>Side  <span class="star_span">overall</span></span> <span><img src="assets/images/stars.png" class="lazy"></span> </li>
 
 				</ul>
 
@@ -161,17 +159,17 @@
 		</section>
 
 		<section class="safety-map">
-			<img src="assets/images/map.png">
+			<img src="assets/images/map.png" class="lazy">
 			<h1>Go Anywhere</h1>
 			<p>Model 3 is fully electric, so you never need to visit a gas stationagain. If you charge overnight at home, you can wake up to a full battery every morning. And when you’re on the road, it’s easy to plug in along the way—at any public station or with the Tesla charging network. We currently have over 10,000 Superchargers </p>
 		</section>
 	</article>
 
  <section class="slide-cars">
- 	<img src="assets/images/gallery_1.png">
- 	<img src="assets/images/gallery_2.png">
- 	<img src="assets/images/gallery_3.png">
- 	<img src="assets/images/gallery_4.png">
+ 	<img src="assets/images/gallery_1.png" class="lazy">
+ 	<img src="assets/images/gallery_2.png" class="lazy">
+ 	<img src="assets/images/gallery_3.png" class="lazy">
+ 	<img src="assets/images/gallery_4.png" class="lazy">
  </section>
 
 
@@ -184,7 +182,7 @@
 			<ul>
 				<li>
 				    <p class="top">from: 59 000$</p>
-					<img src="assets/images/1.png">
+					<img src="assets/images/1.png" class="lazy">
 					<div class="select-color"></div>
 					<h1>Tesla Model 3</h1>
 					<p class="last">302 hp 200km/ph</p> 
@@ -192,7 +190,7 @@
 
 			<li>
 				<p class="top">from: 79 000$</p>
-				<img src="assets/images/2.png">
+				<img src="assets/images/2.png" class="lazy">
 				<div class="select-color"></div>
 				<h1>Tesla Model 3s</h1>
 				<p class="last">343 hp 252 km/ph</p>
@@ -201,7 +199,7 @@
 
 			<li>
 				<p class="top">from: 103 000$</p>
-				<img src="assets/images/3.png">
+				<img src="assets/images/3.png" class="lazy">
 				<div class="select-color"></div>
 				<h1>Tesla Model 3z</h1>
 				<p class="last">380 hp 302 km/ph</p>
@@ -209,12 +207,18 @@
 			</li>
         </ul>	
    </section>
-   <footer>
-   	<img class="child" src="assets/images/sa_logo.png">
-   	<p class="child">c nodmotors GE 2018</p>
-   	<p class="child number">(+995) 595 483 217</p>
-   	<p class="child email">info@nodmotors.ge</p>
-   </footer>
+	<footer>
+		<div class="around">
+				<img class="child" src="assets/images/sa_logo.png">
+			<div class="around1">
+				<p class="child">c nodmotors GE 2018</p>
+			</div>
+			<div class="around1">
+				<p class="child number">(+995) 595 483 217</p>
+				<p class="child email">info@nodmotors.ge</p>
+			</div>
+		</div>
+	</footer>
 
    
    <script>
